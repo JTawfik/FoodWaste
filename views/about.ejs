@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Say NO to FOOD waste</title>
+	<!-- IMPORT GOOGLE MAPS code -->
+
+
+<meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+	
+	<!---Import Bootstrap Styelsheet-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!---Import Animations--->
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<!--- Import CSS Stylesheet --->
+	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+	<!---Set Responsive design--->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!---Import JQuery Library--->
+	<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+	<!---Import Javascript document--->
+</head>
+<body>
+
+<!-- Google Maps API -->
+   <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 52.370216, lng: 4.895168},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4eHqrx3woqXAiGFz0scw0ACwYJIvYKmg&callback=initMap"
+    async defer></script>
+
+	<!-- Menu overlay -->
+<!-- 	<div id="myNav" class="overlay"> -->
+
+	  <!-- Button to close the overlay navigation -->
+<!-- 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+
+	  <!-- Menu Content -->
+<!-- 	  <div class="overlay-content">
+	  	<a href="index.html">Home</a>
+	    <a href="apply.html">Apply</a>
+	    <a href="index.html#courses">Courses</a>
+	    <a href="resources.html">Resources</a>
+	   	<a href="contactus.html">Contact Us</a>
+	  </div>
+	</div> -->
+
+
+
+	<!---set Parallax BG (people)--->
+	<div class="parallax_bg1">
+
+		<!---Navigation Button--->
+		<div class="button_position">
+			<span onclick="openNav()" style="color:#4a4b4c">☰</span>
+		</div>
+		<!---Landing Block - IMAGE + OVERLAY--->
+		<div style="color: #4a4b4c; background-color: ; text-align: center; padding: 150px 75px; text-align:justify;">
+			<h1>SAY NO TO FOOD WASTE</h1>
+		</div>
+
+<center>
+	<div class="container" style="padding: 60px 40px 75px 40px">
+		<div class="row">
+	
+					<div class="col-sm">
+						<div class="card" style="width: 50rem;">
+						  <div class="card-body">
+						    <h5 class="card-title"></h5>
+						    <p class="card-text" style="text-align: left"></p>
+							<button type="button" class="btn btn-primary btn-lg btn-block">DONATE</button>
+							<button type="button" class="btn btn-secondary btn-lg btn-block">FOOD SPOT</button>						  </div>
+						</div>
+					</div>
+				</div>
+			<!-- close row -->
+		</div>
+<!-- close container -->
+</center>
+		<!---Info Block--->
+		<div style="color: #777; background-color:white; text-align: center; padding: 50px 75px; text-align:justify;">
+			<h2>What is FOOD waste?</h2>
+		<p style="padding-top: 17px">
+		L Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+		</p>
+		</div>
+
+
+	<!--end parallax container-->
+	</div>
+
+	<!---set Parallax BG (video)--->
+	<div class=parallax_bg2>
+		<!--Video Content goes here-->
+		<div class="ParallaxVideo">
+			<script>
+   				document.getElementById("myVideo").width=document.body.offsetWidth;
+			</script>
+		 	<video autoplay muted loop>
+			 	<source src="../videos/sample.mp4" type="video/mp4">
+			 	<source src="../videos/sample.webm" type="video/webm">
+		 	</video>
+
+		  	<!---Video Caption goes here--->
+		  	<h2>join 500+ students jumpstarting their careers</h2>
+
+		</div>
+
+
+		<!---Courses--->
+		<div style="color: #777; background-color:white; text-align: center; padding: 50px 75px; text-align:justify;" id="courses">
+			<h2>Upcoming Programs</h2>
+			
+
+			<!---breakout course containers--->
+			<div class="container" style="padding: 60px 40px 75px 40px">
+				<div class="row">
+
+					<!---DONATE--->
+					<div class="col-sm">
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="../images/learn2code.jpg" alt="image failure">
+						  <div class="card-body">
+						    <h5 class="card-title">Coding Fundamentals</h5>
+						    <p class="card-text" style="text-align: left">A quick 3 week course that teaches you the fundamentals of coding. Languages include: HTML, CSS, and JavaScript.</p>
+						    <a href="#" class="btn btn-primary">Apply</a>
+						  </div>
+						</div>
+					</div>
+
+
+					<!---FOOD SPOT--->
+					<div class="col-sm">
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="../images/openDay.jpg" alt="image failure">
+						  <div class="card-body">
+						    <h5 class="card-title">BSSA Open Day</h5>
+						    <p class="card-text" style="text-align: left">Come join us for an afternon open day. Get to know our lectures and ask questions about our programs in person</p>
+						    <a href="#" class="btn btn-primary">Apply</a>
+						  </div>
+						</div>
+					</div>
+
+
+
+					<!---Card 3--->
+					<div class="col-sm">
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="../images/agile.jpg" alt="image failure" style="height: auto">
+						  <div class="card-body">
+						    <h5 class="card-title">Introduction to AGILE</h5>
+						    <p class="card-text" style="text-align: left">A one week course which introduces you to one of the most common development methodlogies.</p>
+						    <a href="#" class="btn btn-primary">Apply</a>
+						  </div>
+						</div>
+					</div>
+
+
+			<!--Close row-->
+			</div>
+
+			<!--Close container-->
+			</div>
+
+		<!--close courses-->
+		</div>
+
+		<!--bottom/footer-->
+		<div style="color: white; background-color: #868889; text-align: left; padding: 25px; text-align: justify; height: 200px">
+
+			<!--bootstrap-->
+			<div class="container">
+			  <div class="row">
+			    <div class="col-sm">
+			      <p = style="text-align: left; font-size: 24px">Stay Informed</p>
+			      <form>
+			      	<input type="text" name="email" value="email">
+			      	<input type="submit" name="submit" value="submit">
+			      </form>
+			    </div>
+			</div>
+
+			
+				<div class="row">
+				    <div class="col-sm">
+				      <p style="text-align: left; padding-top: 5px;">Join BSSA's mailing list to stay up to date about all of our latests courses!</p>
+				    </div>
+				</div>
+
+
+		</div>
+
+	</div>
+	<!--end parallax container-->
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+/*Button*/
+.button_position{
+	position: fixed;
+	z-index: 150
+	padding-top: 15px;
+	padding-left: 9px;
+	font-size: 34px;
+	font-family: calibri;
+	font-color: #4a4b4c;
+}
+
+ /* /////////// Menu Overlay (background) */
+/*.overlay {
+*/    /* Height & width set in javascript_group.js */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 200; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(239,239,239); /* overlay color */
+    background-color: rgba(239,239,239, 1); /* overlay w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.6s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/*.overlay after {
+	background-color: #212121;
+	content: "";
+	display: block;
+	height: 1px;
+	margin: 15px auto 0;
+	width: 10px;
+}*/
+
+/* Position content inside the overlay menu */
+/*.overlay-content {
+*/    position: relative;
+    top: 10%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: calibri light;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* Change navigation link colour on mouseover */
+.overlay a:hover, .overlay a:focus {
+    color: #992a2a; /*turn links red*/
+}
+
+/* Menu close button location (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 4	0px;
+        top: 15px;
+        right: 35px;
+    }
+} 
+
+
+
+/*///////// set parallax BG1 defaults*/
+.parallax_bg1 {
+	/*this is our main background image*/
+	background-color: #bae1ff;
+
+	/*our minimum height per section*/
+	min-height: 500px;
+
+	/*parallax effect*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/*font*/
+	font-family: calibri;
+	font-color: #4a4b4c;
+
+	/*set Z-index*/
+	z-index: 100
+}
+
+
+/*set parallax h1 defaults*/
+.parallax_bg1 h1{
+	font-size: 62px;
+	text-align: center;
+}
+
+/*set parallax h2 defaults*/
+.parallax_bg1 h2{
+	font-size: 36px;
+	text-align: center;
+}
+
+/*set parallax <p> defaults*/
+.parallax_bg1 p{
+	font-size: 18px;
+	text-align: center;
+	font-family: calibri light;
+}
+
+
+
+/*///////// set parallax BG2 defaults*/
+.parallax_bg2 {
+	/*this is our main background image*/
+
+	/*our minimum height per section*/
+	min-height: 500px;
+
+	/*parallax effect*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/*font*/
+	font-family: calibri;
+	font-color: #4a4b4c;
+
+	/*set Z-index*/
+	z-index: 100
+}
+
+
+/*set parallax h1 defaults*/
+.parallax_bg2 h1{
+	font-color: white;
+	font-size: 62px;
+	text-align: center;
+}
+
+/*set parallax h2 defaults*/
+.parallax_bg2 h2{
+	font-size: 36px;
+	text-align: center;
+}
+
+/*set parallax <p> defaults*/
+.parallax_bg2 p{
+	font-size: 18px;
+	text-align: center;
+	font-family: calibri light;
+}
+
+.parallax_bg2 p .footer{
+	text-align: left;
+}
+
+
+
+/*///////// parallax BG3 defaults - RESOURCES PAGE*/
+.parallax_bg3 {
+	/*this is our main background color*/
+	background-color: #bae1ff;
+
+	/*our minimum height per section*/
+	min-height: 500px;
+
+	/*parallax effect*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/*font*/
+	font-family: calibri;
+	font-color: #4a4b4c;
+
+	/*set Z-index*/
+	z-index: 100
+}
+
+
+/*set parallax h1 defaults*/
+.parallax_bg3 h1{
+	font-color: white;
+	font-size: 62px;
+	text-align: center;
+}
+
+/*set parallax h2 defaults*/
+.parallax_bg3 h2{
+	font-size: 36px;
+	text-align: center;
+}
+
+/*set parallax <p> defaults*/
+.parallax_bg3 p{
+	font-size: 24px;
+	text-align: center;
+	font-family: calibri light;
+}
+
+.parallax_bg3 p .footer{
+	text-align: left;
+}
+
+
+
+
+/*Form Styling*/
+input[type=text], select {
+    width: 23%;
+    padding: 3px 5px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {e
+    width: 7%;
+    background-color: #992a2a;
+    color: white;
+    padding: 3px 5px;
+    margin: 1px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Jumnbotron Bootstrap*/
+
+.jumbotron {
+	float: left;
+	margin-left: 50px;
+	margin-top: 25px;
+	width: 575px;
+	padding-bottom: 10px;
+}
+
+
